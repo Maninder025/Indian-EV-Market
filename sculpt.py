@@ -197,7 +197,7 @@ def show_makers():
 # Now use `selection` to render different pages
 if selection == "Home":
     st.write("Homepage")
-    st.image("home.image.jfif", width=800)
+    st.image("home.image.jpg", width=800)
 elif selection == "Registration Trends":
     st.write("Showing registration trends...")
     show_registration()

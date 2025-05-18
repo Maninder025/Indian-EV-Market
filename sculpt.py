@@ -8,9 +8,9 @@ import streamlit as st
 from streamlit_folium import folium_static
 import numpy as np
 
-st.title("Welcome to the Electric Vehicle Data Analysis Dashboard!")
+st.title("Welcome to the EV Data Analysis Dashboard!")
 st.subheader("Explore key trends and insights in the Indian EV market.")
-st.markdown("Use the sidebar to dive in deeper.")
+st.markdown("⬅️Use the sidebar to dive in deeper.")
 # Load data
 @st.cache_data
 def load_data():

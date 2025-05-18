@@ -61,7 +61,7 @@ def show_registration():
     fig2, ax2 = plt.subplots(figsize=(10, 6))
     sns.barplot(x='Vehicle Class', y='Total', data=df_vehicles, orient='v')
     ax2.set_xlabel('Vehicle Class')
-    ax2.set_ylabel('Total Registration')
+    ax2.set_ylabel('Total Registration(1 unit = 10 crore)')
     ax2.set_title('Total Registration by Vehicle Class')
     plt.xticks(rotation=45, ha='right')
     st.pyplot(fig2)
@@ -197,6 +197,7 @@ def show_makers():
 # Now use `selection` to render different pages
 if selection == "Home":
     st.write("Homepage")
+    st.image("https://www.google.com/imgres?q=show%20some%20photos%20that%20can%20be%20displayed%20on%20the%20homepage%20of%20a%20EV%20data%20analysis%20web%20page&imgurl=https%3A%2F%2Fsoulpageit.com%2Fwp-content%2Fuploads%2F2019%2F10%2FElectric-Vechicle.jpg&imgrefurl=https%3A%2F%2Fsoulpageit.com%2Fbig-data-analytics-for-optimizing-electric-vehicles-chargers%2F&docid=HMHXdxxbU2iFhM&tbnid=6KUBn79nVdMCjM&vet=12ahUKEwiJncXiha2NAxWu-DgGHSeeEFUQM3oECGgQAA..i&w=873&h=340&hcb=2&ved=2ahUKEwiJncXiha2NAxWu-DgGHSeeEFUQM3oECGgQAA", width=300)
 elif selection == "Registration Trends":
     st.write("Showing registration trends...")
     show_registration()
